@@ -106,7 +106,7 @@
 							<target name="move-product-zips">
 								<move todir="${project.build.directory}/deploy" verbose="true" overwrite="true">
 									<fileset dir="${project.build.directory}/products" includes="*.zip" />
-									<regexpmapper from="${product.id}-(.*)" to="PalladioDataFlowconfidentiality.\1"/>
+									<regexpmapper from="${product.id}-(.*)" to="PalladioDataFlowConfidentiality.\1"/>
 								</move>   
 							</target>
 						</configuration>
