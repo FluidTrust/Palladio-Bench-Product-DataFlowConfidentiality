@@ -39,9 +39,9 @@
 					<url>https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/nightly/</url>
 				</repository>
 				<repository>
-					<id>eclipse-2020-12</id>
+					<id>eclipse-2021-06</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/2020-12/</url>
+					<url>https://download.eclipse.org/releases/2021-06/</url>
 				</repository>
 			</repositories>
 		</profile>
@@ -65,13 +65,28 @@
 					<url>https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/releases/latest/</url>
 				</repository>
 				<repository>
-					<id>eclipse-2020-12</id>
+					<id>eclipse-2021-06</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/2020-12/</url>
+					<url>https://download.eclipse.org/releases/2021-06/</url>
 				</repository>
 			</repositories>
 		</profile>
 
 	</profiles>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-packaging-plugin</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<useDefaultExcludes>false</useDefaultExcludes>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 	
 </project>

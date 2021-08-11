@@ -26,9 +26,9 @@ http://www.palladio-simulator.com
    </configIni>
 
    <launcherArgs>
-      <programArgs>-consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio
+      <programArgs>-consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio --launcher.defaultAction openFile --launcher.appendVmargs -data workspace/
       </programArgs>
-      <vmArgs>--add-modules=ALL-SYSTEM -Dosgi.requiredJavaVersion=11 -Xms512m -Xmx2048m
+      <vmArgs>-Dsun.java.command=Eclipse -XX:+UseG1GC -XX:+UseStringDeduplication -Dosgi.requiredJavaVersion=11 -Dosgi.dataAreaRequiresExplicitInit=true -Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true -Xms256m -Xmx2048m --add-modules=ALL-SYSTEM
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>

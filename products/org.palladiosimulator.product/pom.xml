@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -15,7 +15,7 @@
 	<properties>
 		<product.id>org.palladiosimulator.palladiobench.product</product.id>
 	</properties>
-	
+
 	<profiles>
 		<profile>
 			<id>release</id>
@@ -39,18 +39,8 @@
 								</goals>
 								<configuration>
 									<target name="replace-nightly-reference">
-										<replaceregexp
-											file="p2.inf"
-											match="palladio-build-updatesite/nightly/"
-											replace="palladio-build-updatesite/releases/latest/"
-											byline="true"
-										/>
-										<replaceregexp
-											file="p2.inf"
-											match="Palladio Nightly Update Site"
-											replace="Palladio Release Update Site"
-											byline="true"
-										/>
+										<replaceregexp file="p2.inf" match="palladio-build-updatesite/nightly/" replace="palladio-build-updatesite/releases/latest/" byline="true" />
+										<replaceregexp file="p2.inf" match="Palladio Nightly Update Site" replace="Palladio Release Update Site" byline="true" />
 									</target>
 								</configuration>
 							</execution>
@@ -97,6 +87,30 @@
 				<version>1.8</version>
 				<executions>
 					<execution>
+						<id>patch-zip-files-with-workspace</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target>
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+								<taskdef resource="net/sf/antcontrib/antlib.xml"/>
+								<for param="file">
+									<path>
+										<fileset dir="${project.build.directory}/products" includes="*.zip"/>
+									</path>
+									<sequential>
+										<echo message="@{file}"/>
+										<zip destfile="@{file}" update="true">
+											<zipfileset dir="${project.basedir}/workspace" prefix="workspace"/>
+										</zip>
+									</sequential>
+								</for>
+							</target>
+						</configuration>
+					</execution>
+					<execution>
 						<id>move-product-zips</id>
 						<phase>package</phase>
 						<goals>
@@ -112,6 +126,24 @@
 						</configuration>
 					</execution>
 				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>ant-contrib</groupId>
+						<artifactId>ant-contrib</artifactId>
+						<version>1.0b3</version>
+						<exclusions>
+							<exclusion>
+								<groupId>ant</groupId>
+								<artifactId>ant</artifactId>
+							</exclusion>
+						</exclusions>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-nodeps</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 
 		</plugins>

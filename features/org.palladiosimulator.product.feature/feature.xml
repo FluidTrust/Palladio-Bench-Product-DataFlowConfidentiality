@@ -39,8 +39,8 @@
       <import feature="org.palladiosimulator.measurementsui.feature" version="5.0.0" match="equivalent"/>
       <import feature="org.palladiosimulator.branding.feature"/>
       <import feature="org.eclipse.jdt" version="3.18.0" match="compatible"/>
-      <import feature="org.eclipse.platform" version="4.18.0" match="compatible"/>
-      <import plugin="org.eclipse.sdk" version="4.18.0" match="compatible"/>
+      <import feature="org.eclipse.platform" version="4.20.0" match="compatible"/>
+      <import plugin="org.eclipse.sdk" version="4.20.0" match="compatible"/>
    </requires>
 
 </feature>

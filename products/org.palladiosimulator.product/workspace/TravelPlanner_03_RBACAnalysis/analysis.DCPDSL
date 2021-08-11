@@ -1,0 +1,10 @@
+import "platform:/resource/TravelPlanner_03_RBACAnalysis/dictionary.pddc"
+
+type AssignedRoles:AssignedRoles
+type GrantedRoles:GrantedRoles
+
+constraint AtLeastOneMatchingRoleRequired {
+	data.attribute.GrantedRoles.$dataRoles{} NEVER FLOWS component.property.AssignedRoles.$subjectRoles{}
+	WHERE
+	isEmpty(intersection(subjectRoles,dataRoles))
+}
