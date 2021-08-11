@@ -101,9 +101,19 @@
 										<fileset dir="${project.build.directory}/products" includes="*.zip"/>
 									</path>
 									<sequential>
-										<echo message="@{file}"/>
+										<local name="prefix"/>
+										<if>
+											<contains string="@{file}" substring="cocoa" />
+											<then>
+												<property name="prefix" value="Eclipse.app/Contents/MacOS/workspace"/>
+											</then>
+											<else>
+												<property name="prefix" value="workspace"/>
+											</else>
+										</if>
+										<echo message="Adding workspace to @{file} with prefix ${prefix}"/>
 										<zip destfile="@{file}" update="true">
-											<zipfileset dir="${project.basedir}/workspace" prefix="workspace"/>
+											<zipfileset dir="${project.basedir}/workspace" prefix="${prefix}"/>
 										</zip>
 									</sequential>
 								</for>
@@ -121,7 +131,7 @@
 								<move todir="${project.build.directory}/deploy" verbose="true" overwrite="true">
 									<fileset dir="${project.build.directory}/products" includes="*.zip" />
 									<regexpmapper from="${product.id}-(.*)" to="PalladioDataFlowConfidentiality.\1"/>
-								</move>   
+								</move>
 							</target>
 						</configuration>
 					</execution>
