@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:repository_1="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/repository" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" id="_PGFe8PVdEeuMKba1Qn68bg" entityName="TravelPlanner Repository">
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DataDictionaryCharacterized="http://palladiosimulator.org/dataflow/dictionary/characterized/1.0" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:confidentiality="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0" xmlns:expression="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/expression" xmlns:expressions="http://palladiosimulator.org/dataflow/dictionary/characterized/expressions/1.0" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:repository_1="http://palladiosimulator.org/dataflow/confidentiality/pcm/0.1.0/repository" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" id="_PGFe8PVdEeuMKba1Qn68bg" entityName="TravelPlanner Repository">
   <components__Repository xsi:type="repository_1:OperationalDataStoreComponent" id="_2UO5cPVdEeuMKba1Qn68bg" entityName="FlightDB">
     <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_3scCgPVdEeuMKba1Qn68bg" entityName="FlightDB.provided.FlightDB" providedInterface__OperationProvidedRole="_XlcQ4PVdEeuMKba1Qn68bg"/>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_lLKNwPVfEeuMKba1Qn68bg" describedService__SEFF="_vZ_EIPVdEeuMKba1Qn68bg">
@@ -64,6 +64,13 @@
       <steps_Behaviour xsi:type="seff:StopAction" id="_vorK8vVeEeuMKba1Qn68bg" predecessor_AbstractAction="_7HCu4PViEeuMKba1Qn68bg"/>
       <steps_Behaviour xsi:type="seff:SetVariableAction" id="_7HCu4PViEeuMKba1Qn68bg" entityName="return confirmation" predecessor_AbstractAction="_vorK8fVeEeuMKba1Qn68bg" successor_AbstractAction="_vorK8vVeEeuMKba1Qn68bg">
         <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_xzLmUPXwEeut8bxiE9EShA">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:True" id="_xzLmUfXwEeut8bxiE9EShA"/>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
         </localVariableUsages_SetVariableAction>
       </steps_Behaviour>
@@ -73,11 +80,34 @@
       <steps_Behaviour xsi:type="seff:StopAction" id="_1jzsoPVeEeuMKba1Qn68bg" predecessor_AbstractAction="_2AAjoPViEeuMKba1Qn68bg"/>
       <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_x32bcPViEeuMKba1Qn68bg" entityName="read flights from DB" predecessor_AbstractAction="_1jzFkPVeEeuMKba1Qn68bg" successor_AbstractAction="_2AAjoPViEeuMKba1Qn68bg" calledService_ExternalService="_w5FfYPVdEeuMKba1Qn68bg" role_ExternalService="_6D-sMPVeEeuMKba1Qn68bg">
         <returnVariableUsage__CallReturnAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_5ekksPXwEeut8bxiE9EShA"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_5ekksfXwEeut8bxiE9EShA">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="flights"/>
         </returnVariableUsage__CallReturnAction>
       </steps_Behaviour>
       <steps_Behaviour xsi:type="seff:SetVariableAction" id="_2AAjoPViEeuMKba1Qn68bg" entityName="select flights based on query and return selection" predecessor_AbstractAction="_x32bcPViEeuMKba1Qn68bg" successor_AbstractAction="_1jzsoPVeEeuMKba1Qn68bg">
         <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_-v6igPXwEeut8bxiE9EShA">
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@0"/>
+            </lhs>
+            <rhs xsi:type="expressions:And" id="_-v6igfXwEeut8bxiE9EShA">
+              <left xsi:type="expression:NamedEnumCharacteristicReference" id="_-v6igvXwEeut8bxiE9EShA">
+                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@0"/>
+                <namedReference xsi:type="stoex:VariableReference" referenceName="query"/>
+              </left>
+              <right xsi:type="expression:NamedEnumCharacteristicReference" id="_-v6ig_XwEeut8bxiE9EShA">
+                <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="travelPlanner.pddc#_Nc31EPXDEeut8bxiE9EShA-characteristicTypes@0"/>
+                <namedReference xsi:type="stoex:VariableReference" referenceName="flights"/>
+              </right>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
         </localVariableUsages_SetVariableAction>
       </steps_Behaviour>
@@ -93,17 +123,45 @@
       <steps_Behaviour xsi:type="seff:StopAction" id="__YyNsvVeEeuMKba1Qn68bg" predecessor_AbstractAction="_pwRQUPViEeuMKba1Qn68bg"/>
       <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_lvQR8PViEeuMKba1Qn68bg" entityName="ask airline to book flight" predecessor_AbstractAction="__YyNsfVeEeuMKba1Qn68bg" successor_AbstractAction="_pwRQUPViEeuMKba1Qn68bg" calledService_ExternalService="_i4_owPVdEeuMKba1Qn68bg" role_ExternalService="_D-dYUPVfEeuMKba1Qn68bg">
         <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_YCGN4vXwEeut8bxiE9EShA"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_YCGN4_XwEeut8bxiE9EShA">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="flight"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="flight"/>
         </inputVariableUsages__CallAction>
         <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_Vr8O0PXwEeut8bxiE9EShA"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_Vr8O0fXwEeut8bxiE9EShA">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="ccd"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="ccd"/>
         </inputVariableUsages__CallAction>
         <returnVariableUsage__CallReturnAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_bzZ8UPXwEeut8bxiE9EShA"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_bzZ8UfXwEeut8bxiE9EShA">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="RETURN"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="confirmation"/>
         </returnVariableUsage__CallReturnAction>
       </steps_Behaviour>
       <steps_Behaviour xsi:type="seff:SetVariableAction" id="_pwRQUPViEeuMKba1Qn68bg" entityName="return confirmation" predecessor_AbstractAction="_lvQR8PViEeuMKba1Qn68bg" successor_AbstractAction="__YyNsvVeEeuMKba1Qn68bg">
         <localVariableUsages_SetVariableAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_ey0TwPXwEeut8bxiE9EShA"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_ey0TwfXwEeut8bxiE9EShA">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="confirmation"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="RETURN"/>
         </localVariableUsages_SetVariableAction>
       </steps_Behaviour>
@@ -113,6 +171,13 @@
       <steps_Behaviour xsi:type="seff:StopAction" id="_Bvke4vVfEeuMKba1Qn68bg" predecessor_AbstractAction="_f782kPViEeuMKba1Qn68bg"/>
       <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_d0k6YPViEeuMKba1Qn68bg" entityName="request flights from airline" predecessor_AbstractAction="_Bvke4fVfEeuMKba1Qn68bg" successor_AbstractAction="_f782kPViEeuMKba1Qn68bg" calledService_ExternalService="_Z7woAPVdEeuMKba1Qn68bg" role_ExternalService="_FqqbcPVfEeuMKba1Qn68bg">
         <inputVariableUsages__CallAction>
+          <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
+            <specification_VariableCharacterisation specification="false"/>
+            <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_ijw10PXwEeut8bxiE9EShA"/>
+            <rhs xsi:type="expression:NamedEnumCharacteristicReference" id="_ijw10fXwEeut8bxiE9EShA">
+              <namedReference xsi:type="stoex:VariableReference" referenceName="query"/>
+            </rhs>
+          </variableCharacterisation_VariableUsage>
           <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="query"/>
         </inputVariableUsages__CallAction>
         <returnVariableUsage__CallReturnAction>

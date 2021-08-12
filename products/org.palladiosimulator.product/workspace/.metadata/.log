@@ -1,4 +1,4 @@
-!SESSION 2021-08-12 15:40:48.468 -----------------------------------------------
+!SESSION 2021-08-12 18:29:06.881 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=11.0.12
 java.vendor=Red Hat, Inc.
@@ -6,15 +6,15 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Framework arguments:  -perspective org.palladiosimulator.pcmbench.perspectives.palladio
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio -data workspace/
 
-!ENTRY org.eclipse.jface 2 0 2021-08-12 15:40:52.661
+!ENTRY org.eclipse.jface 2 0 2021-08-12 18:29:10.842
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-12 15:40:52.662
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-12 18:29:10.843
 !MESSAGE A conflict occurred for CTRL+U:
 Binding(CTRL+U,
 	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
 		Evaluate selected text,
 		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3d3c14c3,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a1be9f8,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -22,43 +22,7 @@ Binding(CTRL+U,
 	ParameterizedCommand(Command(org.modelversioning.emfprofile.diagram.OpenURICommand,Open URI...,
 		Open file by URI,
 		Category(org.eclipse.ui.category.file,File,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@599fab92,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.core.jobs 4 2 2021-08-12 15:41:15.014
-!MESSAGE An internal error occurred during: "Update Job".
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.lambda$0(AutomaticUpdateScheduler.java:66)
-	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:187)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SESSION 2021-08-12 15:41:54.360 -----------------------------------------------
-eclipse.buildId=unknown
-java.version=11.0.12
-java.vendor=Red Hat, Inc.
-BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
-Framework arguments:  -perspective org.palladiosimulator.pcmbench.perspectives.palladio
-Command-line arguments:  -os linux -ws gtk -arch x86_64 -consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio -data workspace/
-
-!ENTRY org.eclipse.jface 2 0 2021-08-12 15:41:58.590
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-12 15:41:58.590
-!MESSAGE A conflict occurred for CTRL+U:
-Binding(CTRL+U,
-	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
-		Evaluate selected text,
-		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30942f54,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+U,
-	ParameterizedCommand(Command(org.modelversioning.emfprofile.diagram.OpenURICommand,Open URI...,
-		Open file by URI,
-		Category(org.eclipse.ui.category.file,File,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11d557a5,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59b43e35,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
