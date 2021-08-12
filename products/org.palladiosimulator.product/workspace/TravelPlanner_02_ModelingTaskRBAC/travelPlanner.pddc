@@ -1,0 +1,9 @@
+dictionary id "_wn5GYPtrEeuANqQVV86D2g"
+
+enum Roles {
+	User
+	Airline
+}
+
+enumCharacteristicType GrantedRoles using Roles
+enumCharacteristicType AssignedRoles using Roles

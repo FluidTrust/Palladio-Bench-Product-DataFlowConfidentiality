@@ -1,98 +1,4 @@
-
-!ENTRY org.eclipse.net4j.util 2 0 2021-08-10 15:07:04.814
-!MESSAGE Problem while deactivating CDOViewProviderRegistryImpl
-!STACK 0
-java.lang.InterruptedException
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
-	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
-	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
-	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
-	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
-	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
-	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
-	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
-	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:252)
-	at org.eclipse.emf.internal.cdo.bundle.Activator$Implementation.doStop(Activator.java:129)
-	at org.eclipse.emf.internal.cdo.bundle.Activator$Implementation.stop(Activator.java:99)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
-	at org.eclipse.osgi.container.Module.stop(Module.java:521)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
-	at org.eclipse.osgi.container.Module.stop(Module.java:521)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-!SESSION 2021-08-10 16:18:02.851 -----------------------------------------------
-eclipse.buildId=unknown
-java.version=11.0.12
-java.vendor=Red Hat, Inc.
-BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
-Framework arguments:  -perspective org.palladiosimulator.pcmbench.perspectives.palladio
-Command-line arguments:  -os linux -ws gtk -arch x86_64 -consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio
-
-!ENTRY org.eclipse.jface 2 0 2021-08-10 16:18:06.990
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-10 16:18:06.990
-!MESSAGE A conflict occurred for CTRL+U:
-Binding(CTRL+U,
-	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
-		Evaluate selected text,
-		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16eca98a,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+U,
-	ParameterizedCommand(Command(org.modelversioning.emfprofile.diagram.OpenURICommand,Open URI...,
-		Open file by URI,
-		Category(org.eclipse.ui.category.file,File,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@119f035f,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.net4j.util 2 0 2021-08-10 16:18:27.442
-!MESSAGE Problem while deactivating CDOViewProviderRegistryImpl
-!STACK 0
-java.lang.InterruptedException
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
-	at java.base/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
-	at org.eclipse.net4j.util.lifecycle.Lifecycle.lock(Lifecycle.java:312)
-	at org.eclipse.net4j.util.lifecycle.Lifecycle.internalDeactivate(Lifecycle.java:118)
-	at org.eclipse.net4j.util.lifecycle.ShareableLifecycle.internalDeactivate(ShareableLifecycle.java:52)
-	at org.eclipse.net4j.util.lifecycle.Lifecycle.deactivate(Lifecycle.java:170)
-	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:235)
-	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:225)
-	at org.eclipse.net4j.util.lifecycle.LifecycleUtil.deactivate(LifecycleUtil.java:252)
-	at org.eclipse.emf.internal.cdo.bundle.Activator$Implementation.doStop(Activator.java:129)
-	at org.eclipse.emf.internal.cdo.bundle.Activator$Implementation.stop(Activator.java:99)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:871)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:863)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1025)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
-	at org.eclipse.osgi.container.Module.stop(Module.java:521)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1886)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1761)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:660)
-	at org.eclipse.osgi.container.Module.stop(Module.java:521)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-!SESSION 2021-08-11 10:05:46.292 -----------------------------------------------
+!SESSION 2021-08-12 15:40:48.468 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=11.0.12
 java.vendor=Red Hat, Inc.
@@ -100,15 +6,15 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Framework arguments:  -perspective org.palladiosimulator.pcmbench.perspectives.palladio
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio -data workspace/
 
-!ENTRY org.eclipse.jface 2 0 2021-08-11 10:06:00.606
+!ENTRY org.eclipse.jface 2 0 2021-08-12 15:40:52.661
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-11 10:06:00.606
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-12 15:40:52.662
 !MESSAGE A conflict occurred for CTRL+U:
 Binding(CTRL+U,
 	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
 		Evaluate selected text,
 		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@696a6506,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3d3c14c3,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -116,7 +22,43 @@ Binding(CTRL+U,
 	ParameterizedCommand(Command(org.modelversioning.emfprofile.diagram.OpenURICommand,Open URI...,
 		Open file by URI,
 		Category(org.eclipse.ui.category.file,File,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1134a934,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@599fab92,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-08-12 15:41:15.014
+!MESSAGE An internal error occurred during: "Update Job".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.lambda$0(AutomaticUpdateScheduler.java:66)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:187)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-08-12 15:41:54.360 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Red Hat, Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -perspective org.palladiosimulator.pcmbench.perspectives.palladio
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -consoleLog -console -perspective org.palladiosimulator.pcmbench.perspectives.palladio -data workspace/
+
+!ENTRY org.eclipse.jface 2 0 2021-08-12 15:41:58.590
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-12 15:41:58.590
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30942f54,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.modelversioning.emfprofile.diagram.OpenURICommand,Open URI...,
+		Open file by URI,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11d557a5,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
