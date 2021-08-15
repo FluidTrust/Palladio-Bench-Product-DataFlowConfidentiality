@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.palladiosimulator.dataflow.confidentiality.pcm.querydsl.ui.custom.launchConfigurationType.dslanalysis">
+    <stringAttribute key="allocation" value="/TravelPlanner_05_RBACAnalysis/travelPlanner.allocation"/>
+    <stringAttribute key="query" value="/TravelPlanner_05_RBACAnalysis/travelPlanner.DCPDSL"/>
+    <stringAttribute key="result" value="/TravelPlanner_05_RBACAnalysis/result.txt"/>
+    <stringAttribute key="usageModel" value="/TravelPlanner_05_RBACAnalysis/travelPlanner.usagemodel"/>
+</launchConfiguration>

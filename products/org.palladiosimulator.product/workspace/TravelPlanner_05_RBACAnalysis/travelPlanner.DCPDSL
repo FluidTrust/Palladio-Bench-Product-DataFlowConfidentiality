@@ -1,4 +1,4 @@
-import "platform:/resource/TravelPlanner_04_RBACAnalysis/travelPlanner.pddc"
+import "platform:/resource/TravelPlanner_05_RBACAnalysis/travelPlanner.pddc"
 
 type AssignedRoles:AssignedRoles
 type GrantedRoles:GrantedRoles
