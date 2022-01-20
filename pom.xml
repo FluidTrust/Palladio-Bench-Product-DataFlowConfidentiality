@@ -8,7 +8,7 @@
 		<artifactId>eclipse-parent-product</artifactId>
 		<version>0.7.5</version>
 	</parent>
-	<groupId>edu.kit.ipd.fluidtrust</groupId>
+	<groupId>org.palladiosimulator.dataflow.confidentiality.pcm.product</groupId>
 	<artifactId>parent</artifactId>	
 	<version>5.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>

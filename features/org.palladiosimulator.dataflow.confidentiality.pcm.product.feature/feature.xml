@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.palladiosimulator.product.feature"
-      label="Palladio Product Feature"
+      id="org.palladiosimulator.dataflow.confidentiality.pcm.product.feature"
+      label="Palladio Data Flow Confidentiality Product Feature"
       version="5.1.0.qualifier"
       provider-name="palladiosimulator.org"
       plugin="org.palladiosimulator.branding"
@@ -9,7 +9,7 @@
       license-feature-version="1.0.0">
 
    <description url="http://www.palladiosimulator.org">
-      This is the Palladio Bench Feature
+      Feature grouping required features for Data Flow Confidentiality
    </description>
 
    <copyright url="%copyrightURL">

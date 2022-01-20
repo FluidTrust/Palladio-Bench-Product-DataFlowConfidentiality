@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>edu.kit.ipd.fluidtrust</groupId>
+		<groupId>org.palladiosimulator.dataflow.confidentiality.pcm.product</groupId>
 		<artifactId>parent</artifactId>
 		<version>5.1.0-SNAPSHOT</version>
 		<relativePath>../..</relativePath>
@@ -13,7 +13,7 @@
 	<packaging>eclipse-repository</packaging>
 
 	<properties>
-		<product.id>org.palladiosimulator.palladiobench.product</product.id>
+		<product.id>org.palladiosimulator.dataflow.confidentiality.pcm.product</product.id>
 	</properties>
 
 	<profiles>
