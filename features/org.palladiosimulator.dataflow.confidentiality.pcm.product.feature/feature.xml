@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.palladiosimulator.dataflow.confidentiality.dse.pcm.product.feature"
+      id="org.palladiosimulator.dataflow.confidentiality.pcm.product.feature"
       label="Palladio Data Flow Confidentiality Product Feature"
       version="5.1.0.qualifier"
       provider-name="palladiosimulator.org"
@@ -38,7 +38,6 @@
       <import feature="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature" match="equivalent"/>
       <import feature="org.palladiosimulator.measurementsui.feature" match="equivalent"/>
       <import feature="org.palladiosimulator.branding.feature"/>
-      <import feature="de.uka.ipd.sdq.dsexplore.feature"/>
       <import feature="org.eclipse.jdt" version="3.18.0" match="compatible"/>
       <import feature="org.eclipse.platform" version="4.22.0" match="compatible"/>
       <import plugin="org.eclipse.sdk" version="4.22.0" match="compatible"/>
