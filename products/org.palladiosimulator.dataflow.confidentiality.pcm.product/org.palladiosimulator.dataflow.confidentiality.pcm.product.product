@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Palladio Data Flow Confidentiality Bench" uid="org.palladiosimulator.dataflow.confidentiality.pcm.product" id="org.palladiosimulator.dataflow.confidentiality.pcm.product.ui.PalladioProduct" application="org.eclipse.ui.ide.workbench" version="5.1.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Palladio Data Flow Confidentiality DSE Bench" uid="org.palladiosimulator.dataflow.confidentiality.dse.pcm.product" id="org.palladiosimulator.dataflow.confidentiality.dse.pcm.product.ui.PalladioProduct" application="org.eclipse.ui.ide.workbench" version="5.1.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.palladiosimulator.pcm.ui/about.png"/>
@@ -342,7 +342,7 @@ version(s), and exceptions or additional permissions here}."
    </plugins>
 
    <features>
-      <feature id="org.palladiosimulator.dataflow.confidentiality.pcm.product.feature" version="5.1.0.qualifier"/>
+      <feature id="org.palladiosimulator.dataflow.confidentiality.dse.pcm.product.feature" version="5.1.0.qualifier"/>
       <feature id="org.palladiosimulator.editors.commons.feature" installMode="root"/>
       <feature id="org.palladiosimulator.editors.sirius.feature" installMode="root"/>
       <feature id="org.palladiosimulator.editors.tree.feature" installMode="root"/>

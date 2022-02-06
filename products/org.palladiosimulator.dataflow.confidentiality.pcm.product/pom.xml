@@ -13,7 +13,7 @@
 	<packaging>eclipse-repository</packaging>
 
 	<properties>
-		<product.id>org.palladiosimulator.dataflow.confidentiality.pcm.product</product.id>
+		<product.id>org.palladiosimulator.dataflow.confidentiality.dse.pcm.product</product.id>
 	</properties>
 
 	<profiles>
