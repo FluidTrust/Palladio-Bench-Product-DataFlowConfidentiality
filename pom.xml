@@ -39,6 +39,11 @@
 					<url>https://updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/nightly/</url>
 				</repository>
 				<repository>
+					<id>dse-fluid</id>
+					<layout>p2</layout>
+					<url>https://updatesite.palladio-simulator.com/fluidtrust/palladio-addons-dataflowconfidentiality-dse/nightly/</url>
+				</repository>
+				<repository>
 					<id>eclipse-2021-12</id>
 					<layout>p2</layout>
 					<url>https://download.eclipse.org/releases/2021-12/</url>

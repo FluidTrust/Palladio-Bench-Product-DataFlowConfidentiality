@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="true" description="Delete 6 resources" element1="/TravelPlanner_01_Structure" element2="/TravelPlanner_02_ModelingTaskRBAC" element3="/TravelPlanner_03_ModeledRBAC" element4="/TravelPlanner_04_ModeledRBACWithIssue" element5="/TravelPlanner_05_RBACAnalysis" element6="/TravelPlanner_06_RBACAnalysisWithIssue" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1644146546308"/>
+</session>

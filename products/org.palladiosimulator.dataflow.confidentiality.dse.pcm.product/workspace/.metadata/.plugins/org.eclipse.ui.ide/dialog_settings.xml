@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="de.uka.ipd.sdq.dsexplore.feature:5.1.0.202202060204"/>
+		<item value="de.uka.ipd.sdq.simulation.abstractsimengine.feature:5.1.0.202202060126"/>
+		<item value="de.uka.ipd.sdq.stoex.feature:5.1.0.202202060028"/>
+		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
+		<item value="org.eclipse.emf.common:2.24.0.v20210924-1718"/>
+		<item value="org.eclipse.emf.ecore.edit:2.15.0.v20210924-1718"/>
+		<item value="org.eclipse.emf.ecore:2.26.0.v20210924-1718"/>
+		<item value="org.eclipse.emf.edit:2.17.0.v20210924-1718"/>
+		<item value="org.eclipse.emf.transaction:1.12.0.201805140824"/>
+		<item value="org.eclipse.emf.validation:1.12.2.202008210805"/>
+		<item value="org.eclipse.emf.workspace:1.12.0.201805140824"/>
+		<item value="org.eclipse.gef:3.11.0.201606061308"/>
+		<item value="org.eclipse.gmf.runtime.notation:1.13.0.202004160913"/>
+		<item value="org.eclipse.gmf:1.13.1.202106221344"/>
+		<item value="org.eclipse.help:2.3.800.v20211124-1800"/>
+		<item value="org.eclipse.jdt:3.18.1000.v20211124-1800"/>
+		<item value="org.eclipse.platform:4.22.0.v20211124-1800"/>
+		<item value="org.eclipse.rcp:4.22.0.v20211124-1800"/>
+		<item value="org.eclipse.sirius.properties.feature:6.5.1.202106111115"/>
+		<item value="org.eclipse.sirius.runtime.aql:6.5.1.202106111115"/>
+		<item value="org.eclipse.sirius.runtime.ide.eef:6.5.1.202106111115"/>
+		<item value="org.eclipse.sirius.runtime.ide.ui:6.5.1.202106111115"/>
+		<item value="org.eclipse.sirius.runtime:6.5.1.202106111115"/>
+		<item value="org.palladiosimulator.analyzer.feature:5.1.0.202202060145"/>
+		<item value="org.palladiosimulator.architecturaltemplates.examples.feature:5.1.0.202202060257"/>
+		<item value="org.palladiosimulator.architecturaltemplates.feature:5.1.0.202202060257"/>
+		<item value="org.palladiosimulator.branding.feature:2.0.0"/>
+		<item value="org.palladiosimulator.commons.stoex.sdk:5.1.0.202202060028"/>
+		<item value="org.palladiosimulator.commons.stoex.serialising.feature:5.1.0.202202060028"/>
+		<item value="org.palladiosimulator.commons.stoex.ui.feature:5.1.0.202202060028"/>
+		<item value="org.palladiosimulator.cost.feature:5.1.0.202202060233"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.dse.pcm.product.feature:5.1.0.202202061208"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.editor.sirius.feature:5.1.0.202202052358"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.editor.tree.feature:5.1.0.202202052358"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.model.feature:5.1.0.202202052358"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.dddsl.feature:5.1.0.202202060002"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.dsexplore.analysis.feature:5.0.0.202202060020"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.editor.sirius.feature:5.1.0.202202060002"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.editor.tree.feature:5.1.0.202202060002"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.model.feature:5.1.0.202202060002"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.querydsl.feature:5.1.0.202202060009"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.transformation.feature:5.1.0.202202060002"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.pcm.ui.feature:5.1.0.202202060002"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.querydsl.feature:5.1.0.202202060002"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.transformation.feature:5.1.0.202202052358"/>
+		<item value="org.palladiosimulator.dataflow.confidentiality.ui.feature:5.1.0.202202052358"/>
+		<item value="org.palladiosimulator.dataflow.diagram.editor.sirius.feature:5.1.0.202202052347"/>
+		<item value="org.palladiosimulator.dataflow.diagram.editor.tree.feature:5.1.0.202202052347"/>
+		<item value="org.palladiosimulator.dataflow.diagram.model.feature:5.1.0.202202052347"/>
+		<item value="org.palladiosimulator.dataflow.dictionary.editor.sirius.feature:5.1.0.202202052347"/>
+		<item value="org.palladiosimulator.dataflow.dictionary.editor.tree.feature:5.1.0.202202052347"/>
+		<item value="org.palladiosimulator.dataflow.dictionary.model.feature:5.1.0.202202052347"/>
+		<item value="org.palladiosimulator.editors.commons.feature:5.1.0.202202060141"/>
+		<item value="org.palladiosimulator.editors.sirius.feature:5.1.0.202202060303"/>
+		<item value="org.palladiosimulator.editors.tree.feature:5.1.0.202202060153"/>
+		<item value="org.palladiosimulator.edp2.feature:5.1.0.202202060130"/>
+		<item value="org.palladiosimulator.edp2.ui.feature:5.1.0.202202060130"/>
+		<item value="org.palladiosimulator.examples.package.feature:5.1.0.202202060300"/>
+		<item value="org.palladiosimulator.experimentautomation.application.tooladapter.simulizar.feature:5.1.0.202202060233"/>
+		<item value="org.palladiosimulator.indirections.editor.sirius.feature:5.1.0.202202050328"/>
+		<item value="org.palladiosimulator.indirections.editor.tree.feature:5.1.0.202202050328"/>
+		<item value="org.palladiosimulator.indirections.model.feature:5.1.0.202202050328"/>
+		<item value="org.palladiosimulator.mdsdprofiles.feature:5.1.0.202202060123"/>
+		<item value="org.palladiosimulator.measurementsui.feature:5.1.0.202202060233"/>
+		<item value="org.palladiosimulator.metricspec.feature:5.1.0.202202060123"/>
+		<item value="org.palladiosimulator.monitorrepository.feature:5.1.0.202202060153"/>
+		<item value="org.palladiosimulator.pcm.feature:5.1.0.202202060134"/>
+		<item value="org.palladiosimulator.pcm.stoex.serialising.feature:5.1.0.202202060134"/>
+		<item value="org.palladiosimulator.protocom.feature:5.1.0.202202060204"/>
+		<item value="org.palladiosimulator.recorderframework.feature:5.1.0.202202060141"/>
+		<item value="org.palladiosimulator.reliability.feature:5.1.0.202202060153"/>
+		<item value="org.palladiosimulator.simulation.abstractsimengine.desmoj.feature:5.1.0.202202060126"/>
+		<item value="org.palladiosimulator.simulizar.feature:5.1.0.202202060204"/>
+		<item value="org.palladiosimulator.simulizar.reconfiguration.henshin.feature:5.1.0.202202060204"/>
+		<item value="org.palladiosimulator.simulizar.reconfiguration.qvto.feature:5.1.0.202202060204"/>
+		<item value="org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature:5.1.0.202202060204"/>
+		<item value="org.palladiosimulator.solver.feature:5.1.0.202202060149"/>
+		<item value="org.palladiosimulator.supporting.prolog.model.feature:5.1.0.202202052348"/>
+		<item value="org.palladiosimulator.supporting.prolog.serializer.feature:5.1.0.202202052348"/>
+		<item value="org.yakindu.base.xtext.utils.gmf:3.5.6.202202060029"/>
+		<item value="org.yakindu.base.xtext.utils.jface:3.5.6.202202060029"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/majuwa/git/FluidTrustPeropteryxExtension/examples"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

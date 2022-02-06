@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QMLDeclarations:QMLDeclarations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:QMLContract="http:///QMLContract.ecore" xmlns:QMLDeclarations="http:///QMLDeclarations.ecore" xmlns:QMLProfile="http:///QMLProfile.ecore" id="_-yYNEIAbEeyNMqmrffRE4Q">
+  <qmlDeclarations xsi:type="QMLProfile:SimpleQMLProfile" id="_IfSXQIAcEeyNMqmrffRE4Q" entityName="Travelplanner Confidentiality Analysis">
+    <usageModel href="travelPlanner.usagemodel#/0"/>
+    <requirements xsi:type="QMLProfile:UsageScenarioRequirement" id="_OBy9kIAcEeyNMqmrffRE4Q" requireContract="_QoCAAoAcEeyNMqmrffRE4Q">
+      <usageScenario href="travelPlanner.usagemodel#_V_RAcPVhEeuMKba1Qn68bg"/>
+    </requirements>
+  </qmlDeclarations>
+  <qmlDeclarations xsi:type="QMLContract:SimpleQMLContract" id="_QoCAAoAcEeyNMqmrffRE4Q" entityName="Confidentiality">
+    <criteria xsi:type="QMLContract:Objective" id="_TKZ2IIAcEeyNMqmrffRE4Q">
+      <dimension href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/Dimension_Confidentiality.qmlcontracttype#_lzV00Fv5EeyWNI3A5PdLkQ"/>
+      <aspects xsi:type="QMLContract:Value" id="_UPhEFIAcEeyNMqmrffRE4Q">
+        <aspectRequirement xsi:type="QMLContract:Goal" id="_VjnJMYAcEeyNMqmrffRE4Q">
+          <aspectRequirementLiteral xsi:type="QMLContract:NumericLiteral" id="_WwZFYIAcEeyNMqmrffRE4Q" value="-1.0"/>
+        </aspectRequirement>
+      </aspects>
+    </criteria>
+    <contractType href="../../plugin/org.palladiosimulator.pcm.dataflow.confidentiality.qml/model/ConfidentialityContract.qmlcontracttype#_BBLcEHe6EeyqWdwf1u0RUg"/>
+  </qmlDeclarations>
+</QMLDeclarations:QMLDeclarations>

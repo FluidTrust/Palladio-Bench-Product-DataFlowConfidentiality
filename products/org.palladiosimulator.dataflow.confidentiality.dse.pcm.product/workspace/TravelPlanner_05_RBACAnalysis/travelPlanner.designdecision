@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designdecision:DecisionSpace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:designdecision="http://sdq.ipd.uka.de/DesignDecision/3.0" xmlns:specific="http://sdq.ipd.uka.de/DesignDecision/Specific/3.0" id="_CaimkIAcEeyNMqmrffRE4Q" name="TravelPlanner">
+  <degreesOfFreedom xsi:type="specific:AllocationDegree" entityName="CreditCard">
+    <primaryChanged href="travelPlanner.allocation#_JJ4CYPVhEeuMKba1Qn68bg"/>
+    <classDesignOptions href="travelPlanner.resourceenvironment#_99dNQPVgEeuMKba1Qn68bg"/>
+    <classDesignOptions href="travelPlanner.resourceenvironment#_9PmBsPVgEeuMKba1Qn68bg"/>
+  </degreesOfFreedom>
+</designdecision:DecisionSpace>

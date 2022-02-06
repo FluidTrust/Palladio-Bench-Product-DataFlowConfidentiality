@@ -1,0 +1,12 @@
+instructions.configure=org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:https${#58}//updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/,type:0,name:Palladio Nightly Update Site,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:https${#58}//updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/,type:1,name:Palladio Nightly Update Site,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:https${#58}//updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/nightly/,type:0,name:FluidTrust Nightly Update Site,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:https${#58}//updatesite.palladio-simulator.com/fluidtrust/fluidtrust-build-updatesite/nightly/,type:1,name:FluidTrust Nightly Update Site,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:https${#58}//updatesite.palladio-simulator.com/fluidtrust/palladio-addons-dataflowconfidentiality-dse/nightly/,type:0,name:FluidTrust DSE Nightly Update Site,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:https${#58}//updatesite.palladio-simulator.com/fluidtrust/palladio-addons-dataflowconfidentiality-dse/nightly/,type:1,name:FluidTrust DSE Nightly Update Site,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/releases/2021-12/,type:0,name:Eclipse 2021-12,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/releases/2021-12/,type:1,name:Eclipse 2021-12,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/eclipse/updates/4.22/,type:0,name:Eclipse 2021-12 Updates,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/eclipse/updates/4.22/,type:1,name:Eclipse 2021-12 Updates,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/tools/orbit/downloads/2021-12/,type:0,name:Eclipse 2021-12 Orbit,enabled:true); \
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/tools/orbit/downloads/2021-12/,type:1,name:Eclipse 2021-12 Orbit,enabled:true);

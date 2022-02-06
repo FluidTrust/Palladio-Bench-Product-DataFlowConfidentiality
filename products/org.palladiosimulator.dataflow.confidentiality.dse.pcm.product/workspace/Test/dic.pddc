@@ -1,0 +1,9 @@
+dictionary id "_bjXpYHkPEeyQApID8W_a-g"
+
+enum Level {
+	High
+	Low
+}
+
+enumCharacteristicType RessourceLevel using Level
+enumCharacteristicType DataLevel using Level

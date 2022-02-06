@@ -1,0 +1,8 @@
+import "platform:/resource/Test/dic.pddc"
+
+type DataLevel : DataLevel
+type ResourceLevel: RessourceLevel
+
+constraint noDownflow {
+	data.attribute.DataLevel.High NEVER FLOWS element.property.ResourceLevel.Low
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<designdecision:DecisionSpace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:designdecision="http://sdq.ipd.uka.de/DesignDecision/3.0" xmlns:specific="http://sdq.ipd.uka.de/DesignDecision/Specific/3.0" id="_YVE8YIaMEey4AfawwRvsTA">
+  <degreesOfFreedom xsi:type="specific:AllocationDegree">
+    <primaryChanged href="newAllocation.allocation#_hkT7cDopEeujr6PSMKhjng"/>
+    <classDesignOptions href="newResourceEnvironment.resourceenvironment#_XDSzwDopEeujr6PSMKhjng"/>
+    <classDesignOptions href="newResourceEnvironment.resourceenvironment#_Yb7aoDopEeujr6PSMKhjng"/>
+  </degreesOfFreedom>
+</designdecision:DecisionSpace>
